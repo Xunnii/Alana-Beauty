@@ -1,0 +1,87 @@
+import MainLayout from '@/Layouts/MainLayout';
+import { Head, Link } from '@inertiajs/react';
+
+export default function Welcome() {
+    return (
+        <MainLayout title="Home - Alana Beauty">
+            <div className="relative overflow-hidden">
+                {/* Hero Section */}
+                <div className="relative pt-16 pb-32 flex items-center justify-center min-h-[80vh]">
+                    <div className="absolute inset-0 z-0">
+                        {/* Abstract background elements for premium feel */}
+                        <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-[var(--color-pudar2)] opacity-30 blur-3xl"></div>
+                        <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-[500px] h-[500px] rounded-full bg-[var(--color-primaryLight)] opacity-40 blur-3xl"></div>
+                    </div>
+                    
+                    <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                        <h1 className="text-5xl md:text-7xl font-Palisade text-[var(--color-text-main)] mb-6 tracking-wide hover-lift inline-block">
+                            Glow Your <span className="text-[var(--color-primary)]">Beauty</span>
+                        </h1>
+                        <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto font-Raleway mb-10 leading-relaxed">
+                            Temukan koleksi skincare dan makeup premium yang dirancang khusus untuk memancarkan kecantikan alami Anda. Dipercaya oleh ribuan pelanggan di Rumbai dan Air Dingin.
+                        </p>
+                        <div className="flex flex-col sm:flex-row justify-center gap-4">
+                            <Link
+                                href="/katalog"
+                                className="px-8 py-4 bg-[var(--color-primary)] text-white font-RalewayBold rounded-full hover:bg-[#C5A017] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 inline-flex items-center justify-center"
+                            >
+                                Belanja Sekarang
+                            </Link>
+                            <Link
+                                href="/trending"
+                                className="px-8 py-4 bg-white text-[var(--color-primary)] font-RalewayBold rounded-full border border-[var(--color-primary)] hover:bg-gray-50 transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-1 inline-flex items-center justify-center"
+                            >
+                                Lihat yang Viral
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Features Section */}
+                <div className="py-24 bg-white relative z-10">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="text-center mb-16">
+                            <h2 className="text-3xl font-Palisade text-[var(--color-text-main)] tracking-wider">Mengapa Alana Beauty?</h2>
+                            <div className="h-1 w-20 bg-[var(--color-primary)] mx-auto mt-4 rounded-full"></div>
+                        </div>
+                        
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                            {/* Feature 1 */}
+                            <div className="text-center p-6 rounded-2xl glass hover-lift">
+                                <div className="w-16 h-16 mx-auto bg-[var(--color-primaryLight)] rounded-full flex items-center justify-center mb-6">
+                                    <svg className="w-8 h-8 text-[var(--color-primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <h3 className="text-xl font-RalewayBold mb-3 text-gray-800">100% Original</h3>
+                                <p className="text-gray-600 font-Raleway">Semua produk kami dijamin keasliannya dan telah bersertifikasi BPOM.</p>
+                            </div>
+
+                            {/* Feature 2 */}
+                            <div className="text-center p-6 rounded-2xl glass hover-lift">
+                                <div className="w-16 h-16 mx-auto bg-[var(--color-primaryLight)] rounded-full flex items-center justify-center mb-6">
+                                    <svg className="w-8 h-8 text-[var(--color-primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <h3 className="text-xl font-RalewayBold mb-3 text-gray-800">Cek Stok Real-Time</h3>
+                                <p className="text-gray-600 font-Raleway">Ketahui ketersediaan produk viral di cabang Rumbai & Air Dingin secara langsung.</p>
+                            </div>
+
+                            {/* Feature 3 */}
+                            <div className="text-center p-6 rounded-2xl glass hover-lift">
+                                <div className="w-16 h-16 mx-auto bg-[var(--color-primaryLight)] rounded-full flex items-center justify-center mb-6">
+                                    <svg className="w-8 h-8 text-[var(--color-primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                    </svg>
+                                </div>
+                                <h3 className="text-xl font-RalewayBold mb-3 text-gray-800">Beauty Advisor</h3>
+                                <p className="text-gray-600 font-Raleway">Dapatkan konsultasi gratis dari ahlinya untuk menemukan produk yang tepat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </MainLayout>
+    );
+}

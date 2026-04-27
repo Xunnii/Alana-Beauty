@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Raleway";
+    src: url(./font/Raleway/Raleway-Regular.ttf)
+}
+
+@font-face {
+    font-family: "RalewayBold";
+    src: url(./font/Raleway/Raleway-SemiBold.ttf)
+}
+
+@font-face {
+    font-family: "RalewayExtra";
+    src: url(./font/Raleway/Raleway-ExtraBold.ttf)
+}
+
+@font-face {
+    font-family: "Palisade";
+    src: url("/fonts/Palisade.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@theme {
+    /* Premium Alana Beauty Palette */
+    /* Primary: Pastel Red / Pink */
+    --color-primary: #fd8282; 
+    --color-primaryHover: #e06b6b;
+    --color-primaryLight: rgba(253, 130, 130, 0.1);
+    
+    /* Soft accents */
+    --color-pudar1: #ffd1d1; /* Lighter pink */
+    --color-pudar2: #ffe6e6; /* Very light pink */
+    
+    /* Backgrounds */
+    --color-background: #FAFAFA;
+    --color-surface: #FFFFFF;
+    
+    /* Text */
+    --color-text-main: #2C2C2C;
+    --color-text-muted: #8E8E8E;
+
+    /* fonts */
+    --font-Raleway: "Raleway", sans-serif;
+    --font-RalewayBold: "RalewayBold", sans-serif;
+    --font-RalewayExtra: "RalewayExtra", sans-serif;
+    --font-Palisade: "Palisade", sans-serif;
+}
+
+/* Base styles for premium feel */
+body {
+    background-color: var(--color-background);
+    color: var(--color-text-main);
+    font-family: "Raleway", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Glassmorphism utilities */
+.glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.dark .glass {
+    background: rgba(26, 26, 26, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Micro-animations */
+.hover-lift {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom styles untuk Ant Design Menu - Override */
+.ant-menu-horizontal .ant-menu-item:hover,
+.ant-menu-horizontal .ant-menu-submenu:hover {
+    color: var(--color-primary) !important;
+    border-bottom-color: var(--color-primary) !important;
+}
+
+.ant-menu-horizontal .ant-menu-item-selected,
+.ant-menu-horizontal .ant-menu-item-selected::after {
+    color: var(--color-primary) !important;
+    border-bottom-color: var(--color-primary) !important;
+    border-bottom: 2px solid var(--color-primary) !important;
+    font-weight: 700 !important;
+}
+
+.ant-btn-primary {
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+}
+
+.ant-btn-primary:hover {
+    background-color: var(--color-primaryHover) !important;
+    border-color: var(--color-primaryHover) !important;
+}
