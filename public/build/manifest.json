@@ -1,0 +1,409 @@
+{
+  "_AdminLayout-Xz3d_gPh.js": {
+    "file": "assets/AdminLayout-Xz3d_gPh.js",
+    "name": "AdminLayout",
+    "imports": [
+      "resources/js/app.jsx",
+      "_ShoppingBagIcon-D4yGDmNM.js"
+    ]
+  },
+  "_ApplicationLogo-DggpFgRV.js": {
+    "file": "assets/ApplicationLogo-DggpFgRV.js",
+    "name": "ApplicationLogo",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_ExclamationTriangleIcon-SzQ8Fu99.js": {
+    "file": "assets/ExclamationTriangleIcon-SzQ8Fu99.js",
+    "name": "ExclamationTriangleIcon",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_GuestLayout-CTS4CER2.js": {
+    "file": "assets/GuestLayout-CTS4CER2.js",
+    "name": "GuestLayout",
+    "imports": [
+      "resources/js/app.jsx",
+      "_ApplicationLogo-DggpFgRV.js"
+    ]
+  },
+  "_InputLabel-k_UwqXV8.js": {
+    "file": "assets/InputLabel-k_UwqXV8.js",
+    "name": "InputLabel",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_MainLayout-D5fiLXfB.js": {
+    "file": "assets/MainLayout-D5fiLXfB.js",
+    "name": "MainLayout",
+    "imports": [
+      "resources/js/app.jsx",
+      "_ShoppingBagIcon-D4yGDmNM.js"
+    ]
+  },
+  "_PrimaryButton-CpmB4TdX.js": {
+    "file": "assets/PrimaryButton-CpmB4TdX.js",
+    "name": "PrimaryButton",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_ShoppingBagIcon-D4yGDmNM.js": {
+    "file": "assets/ShoppingBagIcon-D4yGDmNM.js",
+    "name": "ShoppingBagIcon",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_TextInput-Dd2pebda.js": {
+    "file": "assets/TextInput-Dd2pebda.js",
+    "name": "TextInput",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_TrashIcon-9Ze2cqXp.js": {
+    "file": "assets/TrashIcon-9Ze2cqXp.js",
+    "name": "TrashIcon",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_transition-Ya7r_RdV.js": {
+    "file": "assets/transition-Ya7r_RdV.js",
+    "name": "transition",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_with-selector-C_9So2E5.js": {
+    "file": "assets/with-selector-C_9So2E5.js",
+    "name": "with-selector",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "resources/js/Pages/Admin/Inventory/Index.jsx": {
+    "file": "assets/Index-D6VAuS-N.js",
+    "name": "Index",
+    "src": "resources/js/Pages/Admin/Inventory/Index.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AdminLayout-Xz3d_gPh.js",
+      "_ExclamationTriangleIcon-SzQ8Fu99.js",
+      "_ShoppingBagIcon-D4yGDmNM.js"
+    ]
+  },
+  "resources/js/Pages/Admin/Inventory/Mutations.jsx": {
+    "file": "assets/Mutations-AIZkKgDC.js",
+    "name": "Mutations",
+    "src": "resources/js/Pages/Admin/Inventory/Mutations.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AdminLayout-Xz3d_gPh.js",
+      "_ShoppingBagIcon-D4yGDmNM.js"
+    ]
+  },
+  "resources/js/Pages/Admin/Products/Create.jsx": {
+    "file": "assets/Create-CiSpralV.js",
+    "name": "Create",
+    "src": "resources/js/Pages/Admin/Products/Create.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AdminLayout-Xz3d_gPh.js",
+      "_ShoppingBagIcon-D4yGDmNM.js"
+    ]
+  },
+  "resources/js/Pages/Admin/Products/Edit.jsx": {
+    "file": "assets/Edit-h63VpTER.js",
+    "name": "Edit",
+    "src": "resources/js/Pages/Admin/Products/Edit.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AdminLayout-Xz3d_gPh.js",
+      "_ShoppingBagIcon-D4yGDmNM.js"
+    ]
+  },
+  "resources/js/Pages/Admin/Products/Index.jsx": {
+    "file": "assets/Index-itF-ekY8.js",
+    "name": "Index",
+    "src": "resources/js/Pages/Admin/Products/Index.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AdminLayout-Xz3d_gPh.js",
+      "_TrashIcon-9Ze2cqXp.js",
+      "_ShoppingBagIcon-D4yGDmNM.js"
+    ]
+  },
+  "resources/js/Pages/Admin/Users/Create.jsx": {
+    "file": "assets/Create-YXoOYbc7.js",
+    "name": "Create",
+    "src": "resources/js/Pages/Admin/Users/Create.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AdminLayout-Xz3d_gPh.js",
+      "_ShoppingBagIcon-D4yGDmNM.js"
+    ]
+  },
+  "resources/js/Pages/Admin/Users/Edit.jsx": {
+    "file": "assets/Edit-D7PMau7z.js",
+    "name": "Edit",
+    "src": "resources/js/Pages/Admin/Users/Edit.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AdminLayout-Xz3d_gPh.js",
+      "_ShoppingBagIcon-D4yGDmNM.js"
+    ]
+  },
+  "resources/js/Pages/Admin/Users/Index.jsx": {
+    "file": "assets/Index-CAVniPOn.js",
+    "name": "Index",
+    "src": "resources/js/Pages/Admin/Users/Index.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AdminLayout-Xz3d_gPh.js",
+      "_TrashIcon-9Ze2cqXp.js",
+      "_ShoppingBagIcon-D4yGDmNM.js"
+    ]
+  },
+  "resources/js/Pages/Auth/ConfirmPassword.jsx": {
+    "file": "assets/ConfirmPassword-Cr60sRF_.js",
+    "name": "ConfirmPassword",
+    "src": "resources/js/Pages/Auth/ConfirmPassword.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_TextInput-Dd2pebda.js",
+      "_InputLabel-k_UwqXV8.js",
+      "_PrimaryButton-CpmB4TdX.js",
+      "_GuestLayout-CTS4CER2.js",
+      "_ApplicationLogo-DggpFgRV.js"
+    ]
+  },
+  "resources/js/Pages/Auth/ForgotPassword.jsx": {
+    "file": "assets/ForgotPassword-C2_rEPvD.js",
+    "name": "ForgotPassword",
+    "src": "resources/js/Pages/Auth/ForgotPassword.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_TextInput-Dd2pebda.js",
+      "_PrimaryButton-CpmB4TdX.js",
+      "_GuestLayout-CTS4CER2.js",
+      "_ApplicationLogo-DggpFgRV.js"
+    ]
+  },
+  "resources/js/Pages/Auth/Login.jsx": {
+    "file": "assets/Login-CJ3oUpFJ.js",
+    "name": "Login",
+    "src": "resources/js/Pages/Auth/Login.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_TextInput-Dd2pebda.js",
+      "_InputLabel-k_UwqXV8.js",
+      "_PrimaryButton-CpmB4TdX.js",
+      "_GuestLayout-CTS4CER2.js",
+      "_ApplicationLogo-DggpFgRV.js"
+    ]
+  },
+  "resources/js/Pages/Auth/Register.jsx": {
+    "file": "assets/Register-BEJ8seS4.js",
+    "name": "Register",
+    "src": "resources/js/Pages/Auth/Register.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_TextInput-Dd2pebda.js",
+      "_InputLabel-k_UwqXV8.js",
+      "_PrimaryButton-CpmB4TdX.js",
+      "_GuestLayout-CTS4CER2.js",
+      "_ApplicationLogo-DggpFgRV.js"
+    ]
+  },
+  "resources/js/Pages/Auth/ResetPassword.jsx": {
+    "file": "assets/ResetPassword-BXqRpj8R.js",
+    "name": "ResetPassword",
+    "src": "resources/js/Pages/Auth/ResetPassword.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_TextInput-Dd2pebda.js",
+      "_InputLabel-k_UwqXV8.js",
+      "_PrimaryButton-CpmB4TdX.js",
+      "_GuestLayout-CTS4CER2.js",
+      "_ApplicationLogo-DggpFgRV.js"
+    ]
+  },
+  "resources/js/Pages/Auth/VerifyEmail.jsx": {
+    "file": "assets/VerifyEmail-Ckv_UVfo.js",
+    "name": "VerifyEmail",
+    "src": "resources/js/Pages/Auth/VerifyEmail.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_PrimaryButton-CpmB4TdX.js",
+      "_GuestLayout-CTS4CER2.js",
+      "_ApplicationLogo-DggpFgRV.js"
+    ]
+  },
+  "resources/js/Pages/Dashboard.jsx": {
+    "file": "assets/Dashboard-5mSMb9v3.js",
+    "name": "Dashboard",
+    "src": "resources/js/Pages/Dashboard.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_AdminLayout-Xz3d_gPh.js",
+      "_ShoppingBagIcon-D4yGDmNM.js",
+      "_ExclamationTriangleIcon-SzQ8Fu99.js",
+      "_with-selector-C_9So2E5.js"
+    ]
+  },
+  "resources/js/Pages/Front/BeautyAdvisor.jsx": {
+    "file": "assets/BeautyAdvisor-BXfqY3yC.js",
+    "name": "BeautyAdvisor",
+    "src": "resources/js/Pages/Front/BeautyAdvisor.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_MainLayout-D5fiLXfB.js",
+      "_ShoppingBagIcon-D4yGDmNM.js"
+    ]
+  },
+  "resources/js/Pages/Front/Katalog.jsx": {
+    "file": "assets/Katalog-CJRsiRSj.js",
+    "name": "Katalog",
+    "src": "resources/js/Pages/Front/Katalog.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_MainLayout-D5fiLXfB.js",
+      "_ShoppingBagIcon-D4yGDmNM.js"
+    ]
+  },
+  "resources/js/Pages/Front/Trending.jsx": {
+    "file": "assets/Trending-CM7o8kM9.js",
+    "name": "Trending",
+    "src": "resources/js/Pages/Front/Trending.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_MainLayout-D5fiLXfB.js",
+      "_ShoppingBagIcon-D4yGDmNM.js"
+    ]
+  },
+  "resources/js/Pages/Profile/Edit.jsx": {
+    "file": "assets/Edit-TFohAEEN.js",
+    "name": "Edit",
+    "src": "resources/js/Pages/Profile/Edit.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_ApplicationLogo-DggpFgRV.js",
+      "_transition-Ya7r_RdV.js",
+      "resources/js/Pages/Profile/Partials/DeleteUserForm.jsx",
+      "resources/js/Pages/Profile/Partials/UpdatePasswordForm.jsx",
+      "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.jsx",
+      "_TextInput-Dd2pebda.js",
+      "_InputLabel-k_UwqXV8.js",
+      "_with-selector-C_9So2E5.js",
+      "_PrimaryButton-CpmB4TdX.js"
+    ]
+  },
+  "resources/js/Pages/Profile/Partials/DeleteUserForm.jsx": {
+    "file": "assets/DeleteUserForm-tcpa3uY5.js",
+    "name": "DeleteUserForm",
+    "src": "resources/js/Pages/Profile/Partials/DeleteUserForm.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_TextInput-Dd2pebda.js",
+      "_InputLabel-k_UwqXV8.js",
+      "_transition-Ya7r_RdV.js",
+      "_with-selector-C_9So2E5.js"
+    ]
+  },
+  "resources/js/Pages/Profile/Partials/UpdatePasswordForm.jsx": {
+    "file": "assets/UpdatePasswordForm-BozjtDZ3.js",
+    "name": "UpdatePasswordForm",
+    "src": "resources/js/Pages/Profile/Partials/UpdatePasswordForm.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_TextInput-Dd2pebda.js",
+      "_InputLabel-k_UwqXV8.js",
+      "_PrimaryButton-CpmB4TdX.js",
+      "_transition-Ya7r_RdV.js"
+    ]
+  },
+  "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.jsx": {
+    "file": "assets/UpdateProfileInformationForm-bg_sZIxd.js",
+    "name": "UpdateProfileInformationForm",
+    "src": "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_TextInput-Dd2pebda.js",
+      "_InputLabel-k_UwqXV8.js",
+      "_PrimaryButton-CpmB4TdX.js",
+      "_transition-Ya7r_RdV.js"
+    ]
+  },
+  "resources/js/Pages/Welcome.jsx": {
+    "file": "assets/Welcome-CG24zE-I.js",
+    "name": "Welcome",
+    "src": "resources/js/Pages/Welcome.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_MainLayout-D5fiLXfB.js",
+      "_ShoppingBagIcon-D4yGDmNM.js"
+    ]
+  },
+  "resources/js/app.jsx": {
+    "file": "assets/app-DeOpvB6N.js",
+    "name": "app",
+    "src": "resources/js/app.jsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/Pages/Admin/Inventory/Index.jsx",
+      "resources/js/Pages/Admin/Inventory/Mutations.jsx",
+      "resources/js/Pages/Admin/Products/Create.jsx",
+      "resources/js/Pages/Admin/Products/Edit.jsx",
+      "resources/js/Pages/Admin/Products/Index.jsx",
+      "resources/js/Pages/Admin/Users/Create.jsx",
+      "resources/js/Pages/Admin/Users/Edit.jsx",
+      "resources/js/Pages/Admin/Users/Index.jsx",
+      "resources/js/Pages/Auth/ConfirmPassword.jsx",
+      "resources/js/Pages/Auth/ForgotPassword.jsx",
+      "resources/js/Pages/Auth/Login.jsx",
+      "resources/js/Pages/Auth/Register.jsx",
+      "resources/js/Pages/Auth/ResetPassword.jsx",
+      "resources/js/Pages/Auth/VerifyEmail.jsx",
+      "resources/js/Pages/Dashboard.jsx",
+      "resources/js/Pages/Front/BeautyAdvisor.jsx",
+      "resources/js/Pages/Front/Katalog.jsx",
+      "resources/js/Pages/Front/Trending.jsx",
+      "resources/js/Pages/Profile/Edit.jsx",
+      "resources/js/Pages/Profile/Partials/DeleteUserForm.jsx",
+      "resources/js/Pages/Profile/Partials/UpdatePasswordForm.jsx",
+      "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.jsx",
+      "resources/js/Pages/Welcome.jsx"
+    ],
+    "css": [
+      "assets/app-DioMDiHC.css"
+    ]
+  }
+}
