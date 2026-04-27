@@ -1,8 +1,31 @@
 import AdminLayout from '@/Layouts/AdminLayout';
-import { Head, Link } from '@inertiajs/react';
-import { PlusIcon } from '@heroicons/react/24/outline';
+import { Head, Link, useForm } from '@inertiajs/react';
+import { PlusIcon, PencilSquareIcon, TrashIcon } from '@heroicons/react/24/outline';
 
 export default function ProductIndex({ products }) {
+    const { data, setData, post, processing, errors, reset } = useForm({
+        file: null,
+    });
+
+    const { delete: destroy } = useForm();
+
+    const submitImport = (e) => {
+        e.preventDefault();
+        if (!data.file) {
+            alert('Pilih file Excel terlebih dahulu!');
+            return;
+        }
+        post(route('admin.products.import'), {
+            onSuccess: () => reset('file'),
+        });
+    };
+
+    const handleDelete = (id) => {
+        if (confirm('Apakah Anda yakin ingin menghapus produk ini? Semua data stok di cabang juga akan ikut terhapus.')) {
+            destroy(route('admin.products.destroy', id));
+        }
+    };
+
     return (
         <AdminLayout header="Katalog Produk">
             <Head title="Katalog Produk" />
@@ -12,11 +35,35 @@ export default function ProductIndex({ products }) {
                     <div>
                         <h2 className="text-lg font-RalewayBold text-gray-800">Daftar Produk</h2>
                         <p className="text-sm text-gray-500">Kelola master data produk Anda.</p>
+                        <div className="mt-2 text-xs">
+                            <a href={route('admin.products.template')} className="text-[var(--color-primary)] hover:underline">
+                                &darr; Download Template Excel
+                            </a>
+                        </div>
                     </div>
-                    <div>
+                    <div className="flex items-center space-x-3">
+                        <form onSubmit={submitImport} className="flex items-center space-x-2">
+                            <input 
+                                type="file" 
+                                accept=".xlsx,.xls,.csv" 
+                                onChange={e => setData('file', e.target.files[0])}
+                                className="text-xs text-gray-500 file:mr-2 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-green-50 file:text-green-700 hover:file:bg-green-100 w-48" 
+                            />
+                            <button 
+                                type="submit" 
+                                disabled={processing}
+                                className="bg-green-600 text-white px-3 py-1.5 rounded-lg text-sm font-medium hover:bg-green-700 transition-colors shadow-sm disabled:opacity-50"
+                            >
+                                {processing ? 'Proses...' : 'Import'}
+                            </button>
+                        </form>
+                        {errors.file && <div className="text-red-500 text-xs absolute mt-12">{errors.file}</div>}
+
+                        <div className="h-6 w-px bg-gray-300"></div>
+
                         <Link 
                             href={route('admin.products.create')} 
-                            className="bg-[var(--color-primary)] text-white px-4 py-2 rounded-lg font-medium hover:bg-[var(--color-primaryHover)] transition-colors inline-flex items-center hover-lift"
+                            className="bg-[var(--color-primary)] text-white px-4 py-2 rounded-lg font-medium hover:bg-[var(--color-primaryHover)] transition-colors inline-flex items-center shadow-sm hover-lift"
                         >
                             <PlusIcon className="h-5 w-5 mr-1" />
                             Tambah Produk
@@ -32,6 +79,7 @@ export default function ProductIndex({ products }) {
                                 <th className="px-6 py-4 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Kategori</th>
                                 <th className="px-6 py-4 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Harga</th>
                                 <th className="px-6 py-4 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Status Viral</th>
+                                <th className="px-6 py-4 text-right text-xs font-semibold text-gray-500 uppercase tracking-wider">Aksi</th>
                             </tr>
                         </thead>
                         <tbody className="bg-white divide-y divide-gray-200">
@@ -70,6 +118,22 @@ export default function ProductIndex({ products }) {
                                                 Biasa
                                             </span>
                                         )}
+                                    </td>
+                                    <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                        <div className="flex justify-end space-x-2">
+                                            <Link 
+                                                href={route('admin.products.edit', product.id)} 
+                                                className="text-blue-600 hover:text-blue-900 bg-blue-50 p-2 rounded-lg"
+                                            >
+                                                <PencilSquareIcon className="h-5 w-5" />
+                                            </Link>
+                                            <button 
+                                                onClick={() => handleDelete(product.id)}
+                                                className="text-red-600 hover:text-red-900 bg-red-50 p-2 rounded-lg"
+                                            >
+                                                <TrashIcon className="h-5 w-5" />
+                                            </button>
+                                        </div>
                                     </td>
                                 </tr>
                             ))}

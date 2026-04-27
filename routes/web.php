@@ -48,10 +48,17 @@ Route::middleware('auth')->group(function () {
         Route::get('/products', [\App\Http\Controllers\Admin\ProductController::class, 'index'])->name('products.index');
         Route::get('/products/create', [\App\Http\Controllers\Admin\ProductController::class, 'create'])->name('products.create');
         Route::post('/products', [\App\Http\Controllers\Admin\ProductController::class, 'store'])->name('products.store');
+        Route::post('/products/import', [\App\Http\Controllers\Admin\ProductController::class, 'import'])->name('products.import');
+        Route::get('/products/template', [\App\Http\Controllers\Admin\ProductController::class, 'downloadTemplate'])->name('products.template');
+        Route::get('/products/{product}/edit', [\App\Http\Controllers\Admin\ProductController::class, 'edit'])->name('products.edit');
+        Route::put('/products/{product}', [\App\Http\Controllers\Admin\ProductController::class, 'update'])->name('products.update');
+        Route::delete('/products/{product}', [\App\Http\Controllers\Admin\ProductController::class, 'destroy'])->name('products.destroy');
 
         Route::get('/inventory', [\App\Http\Controllers\Admin\InventoryController::class, 'index'])->name('inventory.index');
         Route::post('/inventory/{inventory}/update-stock', [\App\Http\Controllers\Admin\InventoryController::class, 'updateStock'])->name('inventory.update-stock');
         Route::get('/inventory/mutations', [\App\Http\Controllers\Admin\InventoryController::class, 'mutations'])->name('inventory.mutations');
+
+        Route::resource('users', \App\Http\Controllers\Admin\UserController::class);
     });
 });
 

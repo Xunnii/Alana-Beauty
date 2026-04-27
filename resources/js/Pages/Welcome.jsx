@@ -12,7 +12,7 @@ export default function Welcome() {
                         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-[var(--color-pudar2)] opacity-30 blur-3xl"></div>
                         <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-[500px] h-[500px] rounded-full bg-[var(--color-primaryLight)] opacity-40 blur-3xl"></div>
                     </div>
-                    
+
                     <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <h1 className="text-5xl md:text-7xl font-Palisade text-[var(--color-text-main)] mb-6 tracking-wide hover-lift inline-block">
                             Glow Your <span className="text-[var(--color-primary)]">Beauty</span>
@@ -25,7 +25,7 @@ export default function Welcome() {
                                 href="/katalog"
                                 className="px-8 py-4 bg-[var(--color-primary)] text-white font-RalewayBold rounded-full hover:bg-[#C5A017] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 inline-flex items-center justify-center"
                             >
-                                Belanja Sekarang
+                                Lihat Produk
                             </Link>
                             <Link
                                 href="/trending"
@@ -44,7 +44,7 @@ export default function Welcome() {
                             <h2 className="text-3xl font-Palisade text-[var(--color-text-main)] tracking-wider">Mengapa Alana Beauty?</h2>
                             <div className="h-1 w-20 bg-[var(--color-primary)] mx-auto mt-4 rounded-full"></div>
                         </div>
-                        
+
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                             {/* Feature 1 */}
                             <div className="text-center p-6 rounded-2xl glass hover-lift">

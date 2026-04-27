@@ -26,14 +26,14 @@ export default function AdminLayout({ header, children }) {
         if (user.role === 'owner' || user.role === 'pengawas') {
             items.push(
                 { name: 'Katalog Produk', href: route('admin.products.index'), icon: ShoppingBagIcon, active: route().current('admin.products.*') },
-                { name: 'Inventaris', href: route('admin.inventory.index'), icon: ArchiveBoxIcon, active: route().current('admin.inventory.*') },
+                { name: 'Inventaris', href: route('admin.inventory.index'), icon: ArchiveBoxIcon, active: route().current('admin.inventory.index') },
                 { name: 'Mutasi Stok', href: route('admin.inventory.mutations'), icon: ArrowsRightLeftIcon, active: route().current('admin.inventory.mutations') },
             );
         }
 
         if (user.role === 'owner') {
             items.push(
-                { name: 'Manajemen SDM', href: '#', icon: UserGroupIcon, active: false },
+                { name: 'Manajemen SDM', href: route('admin.users.index'), icon: UserGroupIcon, active: route().current('admin.users.*') },
             );
         }
         
@@ -143,6 +143,16 @@ export default function AdminLayout({ header, children }) {
 
                 {/* Main section */}
                 <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-50 p-6">
+                    {usePage().props.flash?.success && (
+                        <div className="mb-6 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-xl relative animate-in fade-in slide-in-from-top-4 duration-300">
+                            <span className="block sm:inline">{usePage().props.flash.success}</span>
+                        </div>
+                    )}
+                    {usePage().props.flash?.error && (
+                        <div className="mb-6 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-xl relative animate-in fade-in slide-in-from-top-4 duration-300">
+                            <span className="block sm:inline">{usePage().props.flash.error}</span>
+                        </div>
+                    )}
                     {children}
                 </main>
             </div>

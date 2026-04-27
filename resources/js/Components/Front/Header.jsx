@@ -1,9 +1,9 @@
 import { Link, usePage } from '@inertiajs/react';
 import { useState } from 'react';
-import { 
-    HomeIcon, 
-    ShoppingBagIcon, 
-    SparklesIcon, 
+import {
+    HomeIcon,
+    ShoppingBagIcon,
+    SparklesIcon,
     UserCircleIcon,
     Bars3Icon,
     XMarkIcon,
@@ -27,10 +27,10 @@ export default function Header() {
         <header className="sticky top-0 z-50 w-full glass transition-all duration-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
-                    
+
                     {/* Mobile Menu Button */}
                     <div className="flex items-center md:hidden">
-                        <button 
+                        <button
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                             className="text-gray-700 hover:text-[var(--color-primary)] transition"
                         >
@@ -48,8 +48,8 @@ export default function Header() {
                     {/* Desktop Nav */}
                     <nav className="hidden md:flex space-x-8">
                         {navLinks.map((link) => (
-                            <Link 
-                                key={link.name} 
+                            <Link
+                                key={link.name}
                                 href={link.href}
                                 className="flex items-center text-[var(--color-text-main)] hover:text-[var(--color-primary)] font-RalewayBold text-sm uppercase tracking-widest transition-colors duration-200 border-b-2 border-transparent hover:border-[var(--color-primary)] py-2"
                             >
@@ -61,14 +61,14 @@ export default function Header() {
 
                     {/* User Actions */}
                     <div className="flex items-center space-x-4">
-                        <Link href="/cart" className="text-gray-700 hover:text-[var(--color-primary)] transition hover-lift">
+                        {/* <Link href="/cart" className="text-gray-700 hover:text-[var(--color-primary)] transition hover-lift">
                             <ShoppingBagIcon className="h-6 w-6" />
-                        </Link>
-                        
+                        </Link> */}
+
                         <div className="relative">
                             {user ? (
                                 <div>
-                                    <button 
+                                    <button
                                         onClick={() => setUserMenuOpen(!userMenuOpen)}
                                         className="flex items-center space-x-2 focus:outline-none hover-lift"
                                     >
@@ -76,7 +76,7 @@ export default function Header() {
                                             {user.name.charAt(0).toUpperCase()}
                                         </div>
                                     </button>
-                                    
+
                                     {/* Dropdown */}
                                     {userMenuOpen && (
                                         <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 ring-1 ring-black ring-opacity-5 glass">
@@ -85,7 +85,7 @@ export default function Header() {
                                                 <p className="text-xs text-gray-500 truncate">{user.email}</p>
                                             </div>
                                             {user.role !== 'kasir' && (
-                                                <Link href="/admin" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--color-primary)]">
+                                                <Link href={route('dashboard')} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--color-primary)]">
                                                     Dashboard Admin
                                                 </Link>
                                             )}

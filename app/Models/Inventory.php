@@ -17,4 +17,9 @@ class Inventory extends Model
     {
         return $this->belongsTo(Branch::class);
     }
+
+    public function mutations()
+    {
+        return $this->hasMany(StockMutation::class);
+    }
 }
